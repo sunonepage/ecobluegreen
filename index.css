@@ -1,0 +1,830 @@
+@charset "utf-8";
+body,div,header,h1,nav,ul,li,button,section,h2,p,footer{ margin: 0; padding: 0; }
+ul,li{list-style: none;}
+a{text-decoration: none; color: #222;}
+img{display: block;}
+body{ font-family: "나눔스퀘어 네오 OTF Regular", sans-serif;  font-size: 1rem;}
+address{ font-style: normal; }
+
+@media screen and (min-width:1210px) {
+    #header>.header_inner .main_logo{display: block;}
+    #header>.header_inner .m_main_logo{display: none;}
+    .d{display: block;}
+    .d_t{display: block;}
+    .t, .m{display: none;}
+    .menu_toggle{display: none;}
+    #header{
+        width: 100%; height: 110px; 
+        position: relative;
+        z-index: 9999;
+        background-color: #FFFFEC;
+    }
+    #header>.header_inner{
+        width: 100%;
+        max-width: 1280px; height: 75px;
+        display: flex; flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        box-sizing: border-box; padding-top: 30px;
+        margin:  0 auto;
+    }
+    #header>.header_inner>h1{
+        width: 249px; height: 70px;
+    }
+    #header>.header_inner>.navbar{
+        width: 70.796%; height: 75px;
+        position: relative;
+    } 
+    #header>.header_inner>.navbar>ul{
+        width: 100%; height: auto;
+        display: flex; flex-wrap: row wrap;
+        justify-content: space-around;
+        /* margin-left: 7.52%; */
+        margin-top: 10px;
+    }
+    #header>.header_inner>.navbar>ul>li{
+        width: 100%; height: 180px;
+    }
+    #header>.header_inner>.navbar>ul>li:hover>a{
+        background-color: #4EBBD3;
+        border-radius: 10px; color: #fff;
+    }
+    #header>.header_inner>.navbar>ul .top_btn{
+        width: 100px; height: 50px;
+        background: #4ECBD3; color: #fff;
+        border-radius: 20px; border: 1px #4ECBD3 solid;
+        font-size: 1.125rem; 
+        font-weight: bold;
+        position: absolute; top: 5px;
+    }
+    #header>.header_inner>.navbar>ul .top_btn:hover{
+        background-color: #fff; color:#4EBBD3;
+    }
+    #header>.header_inner>.navbar>ul>li>a{
+        width: 112px; height: 50px;
+        display: block; 
+        position: absolute;
+        box-sizing: border-box;
+        padding: 15px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+    #header>.header_inner>.navbar>ul .sub{
+        width: 112px; height: 195px;
+        font-size: 1.15rem;
+        margin-top: 60px;
+        border-radius:10px;
+        background: #FFFFEC;
+        display: none; 
+    }
+    
+    #header>.header_inner>.navbar>ul>li:hover>.sub{
+        display: block;
+    }
+
+    #header>.header_inner>.navbar>ul .sub>li{
+        margin-top: 35px;
+        padding-top: 10px; padding-left: 10px;
+    }
+    #header>.header_inner>.navbar>ul .sub>li>a{
+        width: 112px; height: 65px;
+        box-sizing: border-box;
+        padding: 5px;
+    }
+    #header>.header_inner>.navbar>ul .sub>li:hover>a{
+        color: #4ECBD3;
+    }
+    #wrapper{ width:100%; height: auto;}
+    #wrapper>#main_slide{
+        width: 100%; height: auto;
+        /* width: 1280px;
+        height: 450px;
+        position: relative; overflow: hidden; */
+        margin: 0 auto;
+    }
+    #wrapper>#main_slide img{
+        width: 100%;  height: auto;
+    }
+    #wrapper>#main_activity{
+        width: 1280px; height: 500px;
+        margin: 0 auto;
+    }
+    #wrapper>#main_activity>.activity_inner{
+        width: 78.12%;height: 360px;
+        margin: 70px auto;
+    }
+    #wrapper>#main_activity>.activity_inner>h2{
+        text-align: center; font-size: 2.5rem;
+    }
+    #wrapper>#main_activity>.activity_inner>.activity_name>.scroll{
+        display: flex; flex-flow: row wrap;
+        justify-content: space-around;
+        margin-top: 65px;
+    }
+    #wrapper>#main_activity>.activity_inner>.activity_name>.scroll>p{
+        position: relative;
+    }
+    #wrapper>#main_activity>.activity_inner>.activity_name>.scroll span{
+        position: absolute;
+        font-size: 1.438rem;  top:200px; left: 110px;
+        color: #fff; letter-spacing: 5px;
+        font-weight: bold;
+    }
+    #wrapper>#main_donation{
+        width: 100%; height: 342px;
+        background: url("image/donation_bg.png")repeat center center; 
+    }
+    #wrapper>#main_donation>.donation_box{
+        width: 1280px; height: 342px;
+        margin: 0 auto;
+        position: relative;
+        box-sizing: border-box;
+        padding-top: 95px;
+    }
+    #wrapper>#main_donation>.donation_box>h2{
+        font-size: 2.813rem; font-weight: bold; color: #fff;
+        padding-left: 50.15%;
+    }
+    #wrapper>#main_donation>.donation_box>.bonation_btn{
+        width: 15.23%;/*195px*/ height: 62px;
+        color: #fff; border: 3px solid #fff;
+        font-size: 2.188rem; font-weight: bold;
+        background-color:transparent;
+        margin-top: 35px;
+        margin-left: 69.92%;/*895px*/
+    }
+    #wrapper>#main_campaign{
+        width: 100%; height: 530px;
+        background-color: #FFFFEC;
+    }
+    #wrapper>#main_campaign>.campaign_inner{
+        width: 100%; 
+        max-width: 1280px; height: 450px;
+        margin: 0 auto; box-sizing: border-box;
+        padding-top: 70px;
+    }
+    #wrapper>#main_campaign>.campaign_inner>h2{
+        text-align: center; font-size: 2.5rem;
+    }
+    #wrapper>#main_campaign>.campaign_inner>.campaign_img>.cam_scroll{
+        width: 78.12%;/*1000px*/ height: 335px;
+        display: flex; flex-flow: row wrap;
+        justify-content: space-around;
+        margin: 85px auto;
+    }
+    #wrapper>#main_campaign>.campaign_inner>.campaign_img>.cam_scroll>.icon{
+        width: 230px; height: 216px;
+        border: 1px solid #C2EBEE;
+        background: #C2EBEE; border-radius: 100%;
+        position: relative;
+        /* letter-spacing: 5px; */
+    }
+    #wrapper>#main_campaign>.campaign_inner>.campaign_img .icon:nth-child(1)>img{
+        position: absolute;
+        width: 150px; height: 147px;
+        top: 40px; left: 40px;
+    }
+    #wrapper>#main_campaign>.campaign_inner>.campaign_img .icon:nth-child(2)>img{
+        position: absolute;
+        width: 163px; height: 163px;
+        top: 25px; left: 33px;
+    }
+    #wrapper>#main_campaign>.campaign_inner>.campaign_img .icon:nth-child(3)>img{
+        position: absolute;
+        width: 164px; height: 164px;
+        top: 25px; left: 32px;
+    }
+    #wrapper>#main_campaign>.campaign_inner>.campaign_img>.cam_scroll>.icon span{
+        position: absolute;
+        font-size: 1.563rem; top: 250px; 
+    }
+    #wrapper>#main_campaign>.campaign_inner>.campaign_img .icon:nth-child(1) span{ left: 80px;  letter-spacing: 5px;}
+    #wrapper>#main_campaign>.campaign_inner>.campaign_img .icon:nth-child(2) span{ left: 45px;}
+    #wrapper>#main_campaign>.campaign_inner>.campaign_img .icon:nth-child(3) span{ left: 88px;  letter-spacing: 5px;}
+    #wrapper>#main_ideology{
+        width:100%; height: 500px;
+    }
+    #wrapper>#main_ideology>.ideology_inner{
+        width: 100%;
+        max-width: 1280px; height: 550px;
+        margin: 0 auto;
+        padding-top: 70px;
+        box-sizing: border-box;
+    }
+    #wrapper>#main_ideology>.ideology_inner>h2{
+        text-align: center; font-size: 2.5rem;
+    }
+    #wrapper>#main_ideology>.ideology_inner>.ideology>.ide_scroll{
+        width: 75%; height: 260px;
+        display: flex; flex-wrap: row wrap;
+        justify-content: space-between;
+        margin: 80px auto;
+    }
+    #wrapper>#main_ideology>.ideology_inner>.ideology>.ide_scroll>p{
+        width: 230px; height: 216px;
+        border: 1px solid #4EBBD3; background: #4EBBD3;
+        border-radius: 100%;
+        position: relative;
+    }
+    #wrapper>#main_ideology>.ideology_inner>.ideology>.ide_scroll span{
+        position: absolute; 
+        font-size: 2.5rem; font-weight: bold;
+        color: #fff; top: 92px; left: 75px;
+        letter-spacing: 5px; 
+    }
+    #footer{
+        width: 100%; height: 200px; 
+        position: relative;
+        background-color: #FFFFEC;
+    }
+    #footer>.footer_inner{
+        width: 100%;
+        max-width: 1280px; height: 75px;
+        display: flex; flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        box-sizing: border-box; padding-top: 30px;
+        margin:  0 auto;
+    }
+    #footer>.footer_inner>.footer_contents{
+        width: 39.06%; height: 150px;
+        margin-top: 25px;
+    }
+    #footer>.footer_inner>.footer_contents>.personal{
+        display: flex; flex-wrap: row wrap;
+        justify-content: space-around;
+        font-size: 1rem;
+    }
+    #footer>.footer_inner>.footer_contents>.personal>p:not(:last-of-type){
+        border-right: 1px solid #ededed;
+        padding-right: 10px; box-sizing: border-box;
+    }
+    #footer>.footer_inner>.footer_contents>address{
+        margin-top: 15px; margin-left: 15px;
+        display: flex;  flex-direction: column;
+    }
+    #footer>.footer_inner>.footer_contents>address>p{
+        margin-top: 10px; font-size: 0.875rem;
+    }
+}
+
+/* 미디어 쿼리 */
+@media screen and (max-width:1209px) and (min-width:843px){
+    #header>.header_inner .main_logo{display: block;}
+    #header>.header_inner .m_main_logo{display: none;}
+    .t{display: block;}
+    .d_t{display: block;}
+    .d, .m{display: none;}
+    .menu_toggle .t_toggle{display: block;}
+    .menu_toggle .m_toggle{display: none;}
+    #header{
+        width: 100%; height: 100px;
+        background: #FFFFEC;
+        position: relative;
+        z-index: 9999;
+    }
+    #header>.menu_toggle{
+        position: absolute;
+        top: 20px; right: 20px;
+    }
+    #header>.header_inner{
+        width: 1500px;
+        height: 80px;
+        padding-top: 20px;
+    }
+    #header>.header_inner>h1{
+        width: 249px; height: 70px; margin-left: 1.77%;
+    }
+    #header>.header_inner>.navbar{
+        width: 100vw; /*height: calc(100vh - 70px);*/
+        height: 100vh;
+        background: #4EBBD3;       
+        display: flex; flex-direction: column;
+        justify-content: flex-start;
+        padding: 45px;
+        padding-left: 100px;
+        box-sizing: border-box;
+        margin-top: 10px;
+        display: none; 
+        }
+        #header>.header_inner>.navbar>ul>li{
+            width: 95%; 
+            margin-top: 60px;
+        }    
+        #header>.header_inner>.navbar>ul>li:last-child(2){
+            height:auto; padding-top: 20px;
+        }
+        #header>.header_inner>.navbar>ul>li:last-child{
+            height:auto; padding-top: 20px;
+        } 
+        
+        #header>.header_inner>.navbar>ul .top_btn{
+            font-weight: bold; font-size: 1.875rem;
+            color: #4EBBD3; background: #fff;
+            border: 3px solid #4EBBD3; border-radius: 20px;
+            width: 150px; height: 70px; 
+            transform: translate(-5%, 65%);
+        }
+        #header>.header_inner>.navbar>ul>li>a{
+            color: #fff;
+            font-weight: bold; font-size: 1.875rem;
+        }
+        #header>.header_inner>.navbar>ul .sub{
+            background-color: beige;
+            width: 100%;/*460px*/ height: 0;
+            margin-top: 10px;
+            box-sizing: border-box;
+            display: flex; flex-flow: column;
+            justify-content: space-between;
+            align-content: center; overflow: hidden;
+            font-size: 1.5rem;
+            transition: all .5s; 
+        }
+        #header>.header_inner>.navbar>ul>li:hover>.sub{
+            height: 200px; 
+            padding: 20px;  padding-top: 5px; padding-left: 15px; padding-bottom: 15px;
+        }
+        #header>.header_inner>.navbar>ul .sub>li{
+            box-sizing: border-box;
+            margin-top: 10px;
+            border-bottom: 1px solid #FFFFEC;
+            padding: 10px;
+        } 
+        #header>.header_inner>.navbar>ul .sub>li:hover>a{
+            color: #4EBBD3;
+        }
+        #wrapper{
+            width: 100%; height: auto;
+        }
+        #wrapper>#main_slide{
+            width: 100%;  height: auto;
+        }
+        #wrapper>#main_slide img{
+            width: 100%; height: auto;
+        }
+        #wrapper>#main_activity{
+            width: 100%; height: 485px;
+            margin: 0 auto;
+        }
+        #wrapper>#main_activity>.activity_inner{
+            width: 100%; height: 380px; 
+            margin: 64px auto;
+        }
+        #wrapper>#main_activity>.activity_inner>h2{
+            text-align: center;
+            font-size: 2.188rem;
+        }
+        #wrapper>#main_activity>.activity_inner>.activity_name>.scroll{
+            /* width: 93.71%; height: 270px; */
+            display: flex; flex-flow: row wrap;
+            justify-content: space-around;
+            margin-top: 60px;
+        }
+        #wrapper>#main_activity>.activity_inner>.activity_name>.scroll>p{
+            position: relative; 
+        }
+        #wrapper>#main_activity>.activity_inner>.activity_name>.scroll span{
+            position: absolute;
+            font-size: 1.438rem;  top:200px; left: 110px;
+            color: #fff; letter-spacing: 5px;
+            font-weight: bold;
+        }
+        #wrapper>#main_donation{
+            position: relative;
+            width: 100%; height: 343px;
+            background: url("image/donation_bg.png")repeat center center;         
+        }
+        #wrapper>#main_donation>.donation_box{
+            width: 834px; height: 342px;
+            margin: 0 auto;
+            position: relative;
+            box-sizing: border-box;
+            padding-top: 95px;
+        }
+        #wrapper>#main_donation>.donation_box>h2{
+            font-size: 2.5rem; font-weight: bold; color: #fff;
+            padding-left: 38.15%;
+        }
+        #wrapper>#main_donation>.donation_box>.bonation_btn{
+            width: 15.23%;/*195px*/ height: 55px;
+            color: #fff; border: 3px solid #fff;
+            font-size: 1.563rem; font-weight: bold;
+            background-color:transparent;
+            margin-top: 35px;
+            margin-left: 70.92%;
+        }
+        #wrapper>#main_campaign{
+            width: 100%; height: 535px;
+            background-color: #FFFFEC;
+        }
+        #wrapper>#main_campaign>.campaign_inner{
+            width: 834px; height: 500px;
+            position: relative;
+            padding-top: 80px;
+            margin: 0 auto;
+        }
+        #wrapper>#main_campaign>.campaign_inner>h2{
+            text-align: center;
+            font-size: 2.188rem;
+        }
+        #wrapper>#main_campaign>.campaign_inner>.campaign_img>.cam_scroll{
+            width: 100%; height: 295px;
+            display: flex; flex-flow: row wrap;
+            justify-content: space-around;
+            margin: 62px auto;
+        }
+        #wrapper>#main_campaign>.campaign_inner>.campaign_img>.cam_scroll>.icon{
+            width: 230px; height: 216px;
+            position: relative;
+            border: 1px solid #C2EBEE; background: #C2EBEE;
+            border-radius: 100%;
+        }
+        #wrapper>#main_campaign>.campaign_inner>.campaign_img .icon:nth-child(1)>img{
+            position: absolute;
+            width: 150px; height: 147px;
+            top: 40px; left: 40px;
+        }
+        #wrapper>#main_campaign>.campaign_inner>.campaign_img .icon:nth-child(2)>img{
+            position: absolute;
+            width: 163px; height: 163px;
+            top: 25px; left: 33px;
+        }
+        #wrapper>#main_campaign>.campaign_inner>.campaign_img .icon:nth-child(3)>img{
+            position: absolute;
+            width: 164px; height: 164px;
+            top: 25px; left: 32px;
+        }
+        #wrapper>#main_campaign>.campaign_inner>.campaign_img>.cam_scroll>.icon span{
+            position: absolute;
+            font-size: 1.563rem; top: 250px; 
+        }
+        #wrapper>#main_campaign>.campaign_inner>.campaign_img .icon:nth-child(1) span{ left: 73px;  letter-spacing: 5px;}
+        #wrapper>#main_campaign>.campaign_inner>.campaign_img .icon:nth-child(2) span{ left: 45px;}
+        #wrapper>#main_campaign>.campaign_inner>.campaign_img .icon:nth-child(3) span{ left: 88px;  letter-spacing: 5px;}
+        #wrapper>#main_ideology>.ideology_inner{
+            width: 100%;
+            max-width: 1280px; height: 550px;
+            margin: 0 auto;
+            padding-top: 70px;
+            box-sizing: border-box;
+        }
+        #wrapper>#main_ideology>.ideology_inner>h2{
+            text-align: center; font-size: 2.188rem;
+        }
+        #wrapper>#main_ideology>.ideology_inner>.ideology>.ide_scroll{
+            width: 834px; height: 260px;
+            display: flex; flex-wrap: row wrap;
+            justify-content: space-around;
+            margin: 80px auto;
+        }
+        #wrapper>#main_ideology>.ideology_inner>.ideology>.ide_scroll>p{
+            width: 230px; height: 216px;
+            border: 1px solid #4EBBD3; background: #4EBBD3;
+            border-radius: 100%;
+            position: relative;
+            
+        }
+        #wrapper>#main_ideology>.ideology_inner>.ideology>.ide_scroll span{
+            position: absolute; 
+            font-size: 2.5rem; font-weight: bold;
+            color: #fff; top: 92px; left: 75px;
+            letter-spacing: 5px; 
+        }
+        #footer{
+            width: 100%; height: 200px;
+            background: #FFFFEC;
+            position: relative;
+        }
+        #footer>.footer_inner{
+            width: 100%;
+            max-width: 843px; height: 75px;
+            display: flex; flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+            box-sizing: border-box; padding-top: 30px;
+            margin:  0 auto;
+        }
+        #footer>.footer_inner>.footer_contents{
+            width: 41.51%; height: 140px;
+            margin-top: 20px;
+        }
+        #footer>.footer_inner>.footer_contents>.personal{
+            display: flex; flex-wrap: row wrap;
+            justify-content: space-around;
+            font-size: 0.875rem;
+        }
+        #footer>.footer_inner>.footer_contents>.personal>p:not(:last-of-type){
+            border-right: 1px solid #ededed;
+            padding-right: 5px; box-sizing: border-box;
+        }
+        #footer>.footer_inner>.footer_contents>address{
+            margin-top: 15px; margin-left: 2px;
+            display: flex;  flex-direction: column;
+        }
+        #footer>.footer_inner>.footer_contents>address>p{
+            margin-top: 10px; font-size: 0.75rem;
+        }
+    }
+
+    @media screen and (max-width:842px){
+        #header>.header_inner .main_logo{display: none;}
+        #header>.header_inner .m_main_logo{display: block;}
+        .m{display: block;}
+        .d_t{display: none;}
+        .d, .t{ display: none;}
+        .menu_toggle .m_toggle{display: block;}
+        .menu_toggle .t_toggle{display: none;}
+        #header>.menu_toggle{
+            position: absolute;
+            top: 25px; right: 20px;
+        }
+        #header{
+            width: 100%; height: 75px;
+            background: #FFFFEC;
+            position: relative;
+            z-index: 9999;
+        }
+        #header>.header_inner{
+            width: 100%;
+            height: 75px;
+            padding-top: 20px;
+        }
+        #header>.header_inner>h1{
+            width: 146px; height: 35px; margin-left: 1.77%;
+            padding-top: 5px; box-sizing: border-box;
+        }
+        #header>.header_inner>.navbar{
+            width: 100vw; 
+            height: 100vh;
+            background: #4EBBD3;       
+            display: flex; flex-direction: column;
+            justify-content: flex-start;
+            padding: 25px;
+            padding-left: 50px;
+            box-sizing: border-box;
+            margin-top: 20px;
+            display: none;
+        }
+        #header>.header_inner>.navbar>ul>li{
+            width: 95%; 
+            margin-top: 35px;
+        }    
+        #header>.header_inner>.navbar>ul>li:last-child(2){
+            height:auto; padding-top: 20px;
+        }
+        #header>.header_inner>.navbar>ul>li:last-child{
+            height:auto; padding-top: 20px;
+        } 
+        
+        #header>.header_inner>.navbar>ul .top_btn{
+            font-weight: bold; font-size: 1.5rem;
+            color: #4EBBD3; background: #fff;
+            border: 3px solid #4EBBD3; border-radius: 20px;
+            width: 130px; height: 70px; 
+            transform: translate(-5%, 65%);
+        }
+        #header>.header_inner>.navbar>ul>li>a{
+            color: #fff;
+            font-weight: bold; font-size: 1.5rem;
+        }
+        #header>.header_inner>.navbar>ul .sub{
+            background-color: beige;
+            width: 100%;/*460px*/ height: 0;
+            margin-top: 10px;
+            box-sizing: border-box;
+            display: flex; flex-flow: column;
+            justify-content: space-between;
+            align-content: center; overflow: hidden;
+            font-size: 1.125rem;
+            transition: all .5s; 
+        }
+        #header>.header_inner>.navbar>ul>li:hover>.sub{
+            height: 200px; 
+            padding: 20px;  padding-top: 5px; padding-left: 15px; padding-bottom: 15px;
+        }
+        #header>.header_inner>.navbar>ul .sub>li{
+            box-sizing: border-box;
+            margin-top: 10px;
+            border-bottom: 1px solid #FFFFEC;
+            padding: 10px;
+        } 
+        #header>.header_inner>.navbar>ul .sub>li:hover>a{
+            color: #4EBBD3;
+        }
+        #wrapper{
+            width: 100%; height: auto;
+        }
+        #wrapper>#main_slide{
+            width: 100%;  height: auto;
+        }
+        #wrapper>#main_slide img{
+            width: 100%; height: auto;
+        }
+        #wrapper>#main_activity{
+            /* width: 360px; */ height: auto;/*440px*/
+            margin: 0 auto;
+        }
+        #wrapper>#main_activity>.activity_inner{
+            /* width: 360px; *//*width: 87.5%;*/
+            height: auto; /*360px*/
+            margin: 45px auto;
+        }
+        #wrapper>#main_activity>.activity_inner>h2{
+            text-align: center; font-size: 1.563rem
+        }
+        #wrapper>#main_activity>.activity_inner>.activity_name>.scroll{
+            width: 885px;/*width: 900px;*/
+            display: flex; flex-flow: row wrap;
+            justify-content: space-around;
+            margin: 35px auto; 
+            margin-left: 30px;
+            cursor: pointer;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        #wrapper>#main_activity>.activity_inner>.activity_name>.scroll>p{
+            position: relative;
+        }
+        #wrapper>#main_activity>.activity_inner>.activity_name>.scroll span{
+            position: absolute;
+            font-size: 1.438rem;  top:200px; left: 110px;
+            color: #fff; letter-spacing: 5px;
+            font-weight: bold;
+        }
+        #wrapper>#main_donation{
+            width: 100%; height: 200px;
+            background: url("image/donation_bg.png")repeat center center; 
+        }
+        #wrapper>#main_donation>.donation_box{
+            width: 100%;
+            max-width: 360px; height: 180px;
+            margin: 0 auto;
+            position: relative;
+            box-sizing: border-box;
+            padding-top: 80px;
+        }
+        #wrapper>#main_donation>.donation_box>h2{
+            font-size: 1.563rem; font-weight: bold; color: #fff;
+            padding-left: 45px;
+        }
+        #wrapper>#main_donation>.donation_box>.bonation_btn{
+            width: 34.44%; height: 40px;
+            color: #fff; border: 3px solid #fff;
+            font-size: 1.25rem; font-weight: bold;
+            background-color:transparent;
+            margin-top: 15px;
+            margin-left: 32.5%;
+        }
+        #wrapper>#main_campaign{
+            width: 100%; height: 400px;
+            background-color: #FFFFEC;
+        }
+        #wrapper>#main_campaign>.campaign_inner{
+            width: 300vw;/* width: 100%;  */
+            max-width: 360px; height: auto;
+            margin: 0 auto; 
+            box-sizing: border-box;
+            padding-top: 45px;
+        }
+        #wrapper>#main_campaign>.campaign_inner>h2{
+            text-align: center; font-size: 1.563rem;
+        }
+        #wrapper>#main_campaign>.campaign_inner>.campaign_img>.cam_scroll{
+            width: 900px;
+            /*width: 750px;*/ height: 260px;
+            display: flex; flex-flow: row wrap;
+            justify-content: space-around;
+            margin: 40px auto;
+            margin-left: 30px;
+        }
+        #wrapper>#main_campaign>.campaign_inner>.campaign_img>.cam_scroll>.icon{
+            width: 225px; height: 210px;
+            position: relative;
+            border: 1px solid #C2EBEE; background: #C2EBEE;
+            border-radius: 100%;
+            margin: 0 auto;
+        }
+        #wrapper>#main_campaign>.campaign_inner>.campaign_img .icon:nth-child(1)>img{
+            position: absolute;
+            width: 150px; height: 147px;
+            top: 40px; left: 40px;
+        }
+        #wrapper>#main_campaign>.campaign_inner>.campaign_img .icon:nth-child(2)>img{
+            position: absolute;
+            width: 163px; height: 163px;
+            top: 25px; left: 33px;
+        }
+        #wrapper>#main_campaign>.campaign_inner>.campaign_img .icon:nth-child(3)>img{
+            position: absolute;
+            width: 164px; height: 164px;
+            top: 25px; left: 32px;
+        }
+        #wrapper>#main_campaign>.campaign_inner>.campaign_img>.cam_scroll>.icon span{
+            position: absolute;
+            font-size: 1.25rem; top: 235px; 
+        }
+        #wrapper>#main_campaign>.campaign_inner>.campaign_img .icon:nth-child(1) span{ left: 80px;  letter-spacing: 5px;}
+        #wrapper>#main_campaign>.campaign_inner>.campaign_img .icon:nth-child(2) span{ left: 45px;}
+        #wrapper>#main_campaign>.campaign_inner>.campaign_img .icon:nth-child(3) span{ left: 88px;  letter-spacing: 5px;}
+        #wrapper>#main_ideology{
+            width: 100%; height: auto;
+        }
+        #wrapper>#main_ideology>.ideology_inner{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            padding-top: 55px;
+            box-sizing: border-box;
+        }
+        #wrapper>#main_ideology>.ideology_inner>h2{
+            text-align: center; font-size: 1.563rem;
+        }
+        #wrapper>#main_ideology>.ideology_inner>.ideology>.ide_scroll{
+            width:900px ;height: auto;
+            display: flex; flex-wrap: row wrap;
+            justify-content: space-around;
+            margin: 80px auto;
+            margin-left: 65px;
+        }
+        #wrapper>#main_ideology>.ideology_inner>.ideology>.ide_scroll>p{
+            flex-shrink: 0;
+            width: 210px; height: 210px;
+            border: 1px solid #4EBBD3; background: #4EBBD3;
+            border-radius: 50%;
+            position: relative;
+            
+        }
+        #wrapper>#main_ideology>.ideology_inner>.ideology>.ide_scroll span{
+            position: absolute; 
+            font-size: 2.188rem; font-weight: bold;
+            color: #fff; top: 88px; left: 65px;
+            letter-spacing: 5px; 
+        }
+        #footer{
+            width: 100%; height: 200px;
+            background: #FFFFEC;
+            position: relative;
+        }
+        #footer>.footer_inner{
+            width: 100%;
+            max-width: 360px; height: 75px;
+            display: flex; flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            box-sizing: border-box; padding-top: 100px;
+            margin:  15px auto;
+        }
+        #footer>.footer_inner>.footer_contents{
+            width: 83.33%; height: 120px;
+            margin-top: 15px;
+        }
+        #footer>.footer_inner>.footer_contents>.personal{
+            display: flex; flex-wrap: row wrap;
+            justify-content: space-around;
+            font-size: 0.75rem;
+        }
+        #footer>.footer_inner>.footer_contents>.personal>p:not(:last-of-type){
+            border-right: 1px solid #ededed;
+            padding-right: 5px; box-sizing: border-box;
+        }
+        #footer>.footer_inner>.footer_contents>address{
+            margin-top: 15px; margin-left: 2px;
+        }
+        #footer>.footer_inner>.footer_contents>address>p{
+            margin-top: 10px; font-size: 0.625rem;
+            margin-left: 50px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
